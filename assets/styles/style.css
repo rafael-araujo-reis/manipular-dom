@@ -1,0 +1,24 @@
+.titlePage {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+/* List item screen */
+.itemList {
+  margin-top: 3rem;
+}
+
+.titleItem {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.valueItem {
+  font-size: 1.6rem;
+  color: var(--gray);
+}
+
+#termoPagamento {
+  margin-block: 3rem;
+}
