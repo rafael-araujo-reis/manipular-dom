@@ -91,10 +91,11 @@ ul {
 textarea {
   resize: none;
   border: 1px solid var(--gray);
+  border-radius: 0.5rem;
 
   width: 100%;
   height: 10rem;
-  padding: 1.6rem
+  padding: 1.6rem;
 }
 
 /* Commons */
