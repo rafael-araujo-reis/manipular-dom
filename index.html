@@ -19,38 +19,76 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
 
-    <div>
-      <h1>Dados do pagamento</h1>
+    <div class="contente">
+      <h1 class="titlePage">Dados do pagamento</h1>
 
       <ul>
-        <li>
-          <p>Banco de origem</p>
-          <span>Banco Bradesco S.A.</span>
+        <li class="itemList">
+          <p class="titleItem">Banco de origem</p>
+          <span class="valueItem">Banco Bradesco S.A.</span>
         </li>
-        <li>
-          <p>Banco de destino</p>
-          <span>Itaú Unibanco S.A.</span>
+        <li class="itemList">
+          <p class="titleItem">Banco de destino</p>
+          <span class="valueItem">Itaú Unibanco S.A.</span>
         </li>
-        <li>
-          <p>Valor transferido</p>
-          <span>R$4.500,00</span>
+        <li class="itemList">
+          <p class="titleItem">Valor transferido</p>
+          <span class="valueItem">R$4.500,00</span>
         </li>
-        <li>
-          <p>Data do pagamento</p>
-          <span>06/06/2022</span>
+        <li class="itemList">
+          <p class="titleItem">Data do pagamento</p>
+          <span class="valueItem">06/06/2022</span>
+        </li>
+        <li class="itemList">
+          <p class="titleItem">Descrição do pagamento</p>
+          <textarea placeholder="Caso deseje, deixe aqui o motivo do pagamento" maxlength="50" class="valueItem"
+            name="description" id="description"></textarea>
         </li>
       </ul>
     </div>
 
-    <div>
-      <input type="checkbox" name="termo" id="termo">
-      <label for="termo">Li e concordo com os <a href="">termos de pagamentos</a></label>
+    <div class="acceptanceTerm">
+      <input type="checkbox" name="termo" id="termoPagamento">
+      <label for="termoPagamento">Li e concordo com os <a href="#" onclick="openCloseModal()">termos de
+          pagamentos</a></label>
     </div>
 
-    <button disabled>Seguir para pagamento</button>
-  </div>
+    <div class="nextPage">
+      <button disabled id="goForPayment">Seguir para pagamento</button>
+    </div>
+
+    <div class="modal" id="modalTerm" hidden>
+      <button class="closeModal" onclick="openCloseModal()">
+        <img src="./assets/images/close.svg" alt="Fechar modal de termo de pagamento">
+      </button>
+
+      <h2 class="titleModal">Termo de aceite de pagamentos</h2>
+
+      <p class="contenteModal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis esse aliquid, iusto sit
+        consequatur nostrum.
+        Velit voluptates ipsum saepe beatae consequatur laborum culpa, voluptatem praesentium delectus et error
+        assumenda modi officia laboriosam ipsam. Quis eos, molestiae assumenda quasi excepturi provident accusamus
+        suscipit eius, consequuntur explicabo nulla officiis impedit expedita. Voluptates officia aliquid possimus
+        officiis eligendi rem qui necessitatibus. Nemo, eius! Inventore nesciunt provident nam, iste hic quis distinctio
+        consequatur nulla veritatis. Voluptatem, ab voluptatum harum dignissimos optio soluta rerum exercitationem
+        repellendus animi vitae et modi quasi praesentium quibusdam voluptates corporis! Inventore aperiam magnam
+        corporis odit sed! Maiores voluptates qui deleniti, ex quod fugit possimus labore provident fuga nulla ut dolore
+        quam facilis doloremque et deserunt itaque inventore doloribus. Ea, cumque voluptate, odio aliquid autem,
+        excepturi hic aspernatur magni tenetur dignissimos illum aut praesentium? Ipsa odio quod illum sequi. Quaerat
+        ipsum aperiam maiores autem assumenda eveniet? Impedit maiores illum quod, corrupti dolorum cupiditate fugiat,
+        ut non doloribus, fuga consequuntur facilis explicabo quibusdam ex eaque maxime similique iure quisquam hic?
+        Vero perspiciatis aliquam odio provident! Blanditiis, debitis nemo aliquam impedit magnam id libero sapiente
+        aperiam tenetur suscipit. Eius, corrupti et ex iusto saepe autem quae modi voluptate consequuntur quod omnis
+        nihil blanditiis assumenda deleniti sit, nobis aliquam minima, totam odio earum! Officia itaque alias explicabo
+        id aliquam praesentium obcaecati consequatur natus accusantium nulla iste pariatur ipsam quidem quod unde rerum
+        incidunt sapiente, quae corporis in corrupti nostrum! Perspiciatis neque asperiores nostrum ad illo explicabo
+        pariatur nam corporis laboriosam, porro, sed iusto natus!</p>
+
+      <button id="acceptTerm" onclick="acceptTerm()">Aceito o termo de pagamento</button>
+    </div>
+  </main>
 </body>
 
 <script src="./assets/scripts/script.js"></script>
