@@ -4,9 +4,9 @@
   --blue: #01359A;
   --yellow: #FFFF01;
   --white: #FFFFFF;
+
   --gray: #938E8B;
-
-
+  --gray-light: #e2e2e2;
 }
 
 * {
